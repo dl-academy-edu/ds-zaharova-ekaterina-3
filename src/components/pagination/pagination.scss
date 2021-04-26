@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+    &__item {
+        margin-right: 7px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    &__left, 
+    &__right {
+    width: 42px;
+    height: 42px;
+    background-color: transparent;
+    border: #070707 2px solid;
+    border: 2.5px solid #070707;
+    border-radius: 21px;
+    }
+}
+@media (min-width: 375px) and (max-width: 462px) {
+    .pagination {
+        // &__item {
+
+        // }
+        &__left, 
+        &__right {
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
