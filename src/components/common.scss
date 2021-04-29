@@ -47,7 +47,12 @@ button {
 fieldset {
 border: 0;
 }
-
+}
+.heading {
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 57px;
+  color: #070707;
 }
 
 
@@ -56,3 +61,4 @@ border: 0;
 @import "./footer/footer";
 @import "./pagination/pagination";
 @import "./menu-btn/menu-btn";
+@import "./blog-post/blog-post";
