@@ -10,7 +10,7 @@
 .register-container {
     position: fixed;
     z-index: 2;
-    margin-top: 118px;
+    top: 118px;
     margin-left: calc(50% - 680px / 2);
     @media (max-width: 823px) {
         margin-left: calc(50% - 600px / 2);

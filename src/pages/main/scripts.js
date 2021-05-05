@@ -228,8 +228,18 @@ let headerMobile = document.querySelector('.header-mobile');
 let headerOpenBtn = document.querySelector('.slider__menu-btn');
 let headerOverlay = document.querySelector('.header-overlay');
 let headerCloseBtn = document.querySelector ('.header-mobile__close-button');
+let registerModal = document.querySelector('.register-wrapper');
+let registerOpenBtn = document.querySelector('.registerBtnOpen');
+let registerMobileOpenBtn = document.querySelector('.mobileRegisterBtnOpen');
+let registerOverlay = document.querySelector('.register-overlay');
+let registerCloseBtn = document.querySelector ('.register-wrapper__close-btn');
+let signOpenBtn = document.querySelector('.signBtnOpen');
+let signMobileOpenBtn = document.querySelector('.mobileSignBtnOpen');
+let signModal = document.querySelector('.sign-wrapper');
+let signOverlay = document.querySelector('.sign-overlay');
+let signCloseBtn = document.querySelector ('.sign-wrapper__close-btn');
 
-headerOpenBtn.addEventListener ('click', function(){
+function headerOpen() {
     header.classList.add('header-none');
     headerMobile.classList.add('open');
     headerOverlay.classList.add('open');
@@ -240,19 +250,12 @@ headerOpenBtn.addEventListener ('click', function(){
             headerOverlay.classList.remove('open');
         }
     })
-})
-headerCloseBtn.addEventListener('click', function(){
+}
+function headerClose() {
     header.classList.remove('header-none');
     headerMobile.classList.remove('open');
     headerOverlay.classList.remove('open');
-})
-
-let registerModal = document.querySelector('.register-wrapper');
-let registerOpenBtn = document.querySelector('.registerBtn');
-let registerMobileOpenBtn = document.querySelector('.mobileRegisterBtn');
-let registerOverlay = document.querySelector('.register-overlay');
-let registerCloseBtn = document.querySelector ('.register-wrapper__close-btn');
-
+}
 function registerOpen() {
     registerModal.classList.add('open');
     registerOverlay.classList.add('open');
@@ -269,7 +272,28 @@ function registerClose() {
     registerModal.classList.remove('open');
     registerOverlay.classList.remove('open');
 }
-
+function signOpen() {
+    signModal.classList.add('open');
+    signOverlay.classList.add('open');
+    headerMobile.classList.remove('open');
+    headerOverlay.classList.remove('open');
+    window.addEventListener('keydown', function(evt){
+        if (evt.code === "Escape") {
+            signModal.classList.remove('open');
+            signOverlay.classList.remove('open');
+        }
+    })
+}
+function signClose() {
+    signModal.classList.remove('open');
+    signOverlay.classList.remove('open');
+}
+headerOpenBtn.addEventListener ('click', function(){
+    headerOpen() 
+})
+headerCloseBtn.addEventListener('click', function(){
+    headerClose()
+})
 registerOpenBtn.addEventListener ('click', function(){
     registerOpen()
 })
@@ -278,4 +302,11 @@ registerMobileOpenBtn.addEventListener ('click', function(){
 })
 registerCloseBtn.addEventListener('click', function(){
     registerClose()
+})
+
+signOpenBtn.addEventListener ('click', function(){
+    signOpen() 
+})
+signCloseBtn.addEventListener('click', function(){
+    signClose()
 })
