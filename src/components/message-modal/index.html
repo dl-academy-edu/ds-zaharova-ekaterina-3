@@ -1,0 +1,46 @@
+<div class="message-container">
+    <div class="message-wrapper">
+        <button type="button" class="message-wrapper__close-btn">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282" />
+                <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282" />
+            </svg>
+        </button>
+        <form action="https://echo.htmlacademy.ru" method="POST" id="message-modal" class="message"
+            aria-label="message">
+            <div class="message__wrapper">
+                <div class="message__input-wrapper message__input-wrapper_margin">
+                    <label for="question-name" class="message__label">What is your name?</label>
+                    <input type="text" id="question-name" class="message__input">
+                </div>
+                <div class="message__input-wrapper">
+                    <label for="question-subject" class="message__label">Message subject</label>
+                    <input type="text" id="question-subject" class="message__input">
+                </div>
+            </div>
+            <div class="message__wrapper">
+                <div class="message__input-wrapper message__input-wrapper_margin">
+                    <label for="question-email" class="message__label">Your Email</label>
+                    <input type="email" id="question-email" class="message__input">
+                </div>
+                <div class="message__input-wrapper">
+                    <label for="question-phone" class="message__label">Your mobile phone</label>
+                    <input type="number" id="question-phone" class="message__input">
+                </div>
+            </div>
+            <div class="message__wrapper message__wrapper_flex">
+                <label for="question-message" class="message__textarea-label">What do you want to discuss with
+                    me?</label>
+                <textarea name="message" id="question-message" cols="30" rows="10"
+                    class="message__textarea-input"></textarea>
+            </div>
+            <div class="message__wrapper">
+                <input type="checkbox" id="user-agree-message" class="message__input-checkbox visually-hidden" required>
+                <label for="user-agree-message" class="message__label-checkbox">Clicking on the button, you consent to
+                    the processing of your personal data.</label>
+            </div>
+            <button type="submit" class="message__btn">Send</button>
+        </form>
+    </div>
+</div>
+<div class="message-overlay"></div>

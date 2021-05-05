@@ -238,6 +238,10 @@ let signMobileOpenBtn = document.querySelector('.mobileSignBtnOpen');
 let signModal = document.querySelector('.sign-wrapper');
 let signOverlay = document.querySelector('.sign-overlay');
 let signCloseBtn = document.querySelector ('.sign-wrapper__close-btn');
+let messageOpenBtn = document.querySelector('.modalOpenBtn');
+let messageModal = document.querySelector('.message-wrapper');
+let messageOverlay = document.querySelector('.message-overlay');
+let messageCloseBtn = document.querySelector ('.message-wrapper__close-btn');
 
 function headerOpen() {
     header.classList.add('header-none');
@@ -288,6 +292,20 @@ function signClose() {
     signModal.classList.remove('open');
     signOverlay.classList.remove('open');
 }
+function messageOpen() {
+    messageModal.classList.add('open');
+    messageOverlay.classList.add('open');
+    window.addEventListener('keydown', function(evt){
+        if (evt.code === "Escape") {
+            signModal.classList.remove('open');
+            signOverlay.classList.remove('open');
+        }
+    })
+}
+function messageClose() {
+    messageModal.classList.remove('open');
+    messageOverlay.classList.remove('open');
+}
 headerOpenBtn.addEventListener ('click', function(){
     headerOpen() 
 })
@@ -309,4 +327,10 @@ signOpenBtn.addEventListener ('click', function(){
 })
 signCloseBtn.addEventListener('click', function(){
     signClose()
+})
+messageOpenBtn.addEventListener ('click', function(){
+    messageOpen() 
+})
+messageCloseBtn.addEventListener('click', function(){
+    messageClose()
 })
