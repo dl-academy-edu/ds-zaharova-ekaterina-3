@@ -9,10 +9,10 @@
           <a href="/pages/blog/index.html" class="header__nav-link">My blog</a>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Sign in</a>
+          <button type="button" class="header__nav-btn">Sign in</button>
         </li>
         <li class="header__nav-item">
-          <a href="#" class="header__nav-link">Register</a>
+          <button type="button" class="header__nav-btn registerBtn">Register</button>
         </li>
       </ul>
     </nav>
@@ -37,13 +37,15 @@
           <a href="#" class="header-mobile__nav-link">My blog</a>
         </li>
         <li class="header-mobile__nav-item">
-          <a href="#" class="header-mobile__nav-link">Sign in</a>
+          <button type="button" class="header-mobile__nav-btn">Sign in</button>
         </li>
         <li class="header-mobile__nav-item">
-          <a href="#" class="header-mobile__nav-link">Register</a>
+          <button type="button" class="header-mobile__nav-btn mobileRegisterBtn">Register</button>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 <div class="header-overlay"></div>
+
+@@include('register-modal/index.html')

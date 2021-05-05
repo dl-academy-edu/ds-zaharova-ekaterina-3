@@ -1,0 +1,54 @@
+<div class="register-container">
+<div class="register-wrapper">
+    <button type="button" class="register-wrapper__close-btn">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+            </svg>            
+    </button>
+    <form action="https://echo.htmlacademy.ru" method="POST" id="register-modal" class="register" aria-label="register">
+        <div class="register__wrapper register__wrapper_flex">
+        <label for="email" class="register__label">Email</label>
+        <input type="email" id="user-email" class="register__input">
+        </div>
+        <div class="register__wrapper">
+            <div class="register__input-wrapper register__input-wrapper_margin">
+                <label for="user-name" class="register__label">Name</label>
+                <input type="text" id="user-name" class="register__input">
+            </div>
+            <div class="register__input-wrapper">
+                <label for="user-surname" class="register__label">Surname</label>
+                <input type="text" id="user-surname" class="register__input">
+            </div>
+        </div>
+        <div class="register__wrapper">
+            <div class="register__input-wrapper register__input-wrapper_margin">
+                <label for="user-password" class="register__label">Password</label>
+                <input type="password" id="user-password" class="register__input">
+            </div>
+            <div class="register__input-wrapper">
+                <label for="user-repeat-pass" class="register__label">Repeat password</label>
+                <input type="password" id="user-repeat-pass" class="register__input">
+            </div>
+        </div>
+        <div class="register__wrapper">
+            <div class="register__input-wrapper register__input-wrapper_margin">
+                <label for="user-location" class="register__label">Location</label>
+                <input type="text" id="user-location" class="register__input">
+            </div>
+            <div class="register__input-wrapper">
+                <label for="user-age" class="register__label">Age</label>
+                <input type="number" id="user-age" class="register__input">
+            </div>
+        </div>
+        <div class="register__wrapper">
+        <input type="checkbox" id="user-agree" class="register__input-checkbox visually-hidden" required>
+        <label for="user-agree" class="register__label-checkbox">Clicking on the button, you consent to the processing
+            of
+            your personal data.</label>
+        </div>
+        <button type="submit" class="register__btn">Sign up</button>
+    </form>
+</div>
+</div>
+<div class="register-overlay"></div>

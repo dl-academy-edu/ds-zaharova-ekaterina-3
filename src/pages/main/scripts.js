@@ -246,3 +246,36 @@ headerCloseBtn.addEventListener('click', function(){
     headerMobile.classList.remove('open');
     headerOverlay.classList.remove('open');
 })
+
+let registerModal = document.querySelector('.register-wrapper');
+let registerOpenBtn = document.querySelector('.registerBtn');
+let registerMobileOpenBtn = document.querySelector('.mobileRegisterBtn');
+let registerOverlay = document.querySelector('.register-overlay');
+let registerCloseBtn = document.querySelector ('.register-wrapper__close-btn');
+
+function registerOpen() {
+    registerModal.classList.add('open');
+    registerOverlay.classList.add('open');
+    headerMobile.classList.remove('open');
+    headerOverlay.classList.remove('open');
+    window.addEventListener('keydown', function(evt){
+        if (evt.code === "Escape") {
+            registerModal.classList.remove('open');
+            registerOverlay.classList.remove('open');
+        }
+    })
+}
+function registerClose() {
+    registerModal.classList.remove('open');
+    registerOverlay.classList.remove('open');
+}
+
+registerOpenBtn.addEventListener ('click', function(){
+    registerOpen()
+})
+registerMobileOpenBtn.addEventListener ('click', function(){
+    registerOpen()
+})
+registerCloseBtn.addEventListener('click', function(){
+    registerClose()
+})
