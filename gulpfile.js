@@ -115,6 +115,7 @@ async function buildProject() {
   img("./src/static/images", `./${finalFolder}/static/images`);
   // Обработка шрифтов
   fonts("./src/static/fonts", `./${finalFolder}/static/fonts`);
+  img("./src/js", `./${finalFolder}/js`);
 }
 
 // Функция которая слушает изменения файлов в проекте

@@ -54,7 +54,13 @@ border: 0;
   line-height: 57px;
   color: #070707;
 }
-
+.invalid-feedback {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #EB3617;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
 
 // Подключение компонентов
 @import "./header/header";
@@ -65,3 +71,7 @@ border: 0;
 @import "./register-modal/register-modal";
 @import "./sign-modal/sign-modal";
 @import "./message-modal/message-modal";
+
+.is-invalid {
+  border: 2.5px solid #EB3617;
+}

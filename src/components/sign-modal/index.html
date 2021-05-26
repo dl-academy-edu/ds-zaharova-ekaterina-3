@@ -6,14 +6,14 @@
                 <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282" />
             </svg>
         </button>
-        <form action="https://echo.htmlacademy.ru" method="POST" id="sign-modal" class="sign" aria-label="sign">
+        <form action="https://echo.htmlacademy.ru" method="POST" name="signIn"  id="sign-modal" class="sign" aria-label="sign">
             <div class="sign__wrapper sign__wrapper_margin">
                 <label for="user-email-sign" class="sign__label">Email</label>
-                <input type="email" id="user-email-sign" class="sign__input">
+                <input type="text" name="email" id="user-email-sign" class="sign__input" required>
             </div>
             <div class="sign__wrapper">
                 <label for="user-pass-sign" class="sign__label">Password</label>
-                <input type="password" id="user-pass-sign" class="sign__input">
+                <input type="password" name="password" id="user-pass-sign" class="sign__input" required>
             </div>
             <button type="submit" class="sign__btn">Log in</button>
         </form>
