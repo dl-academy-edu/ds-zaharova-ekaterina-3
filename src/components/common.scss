@@ -1,0 +1,77 @@
+/* General */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+ul {
+  list-style-type: none;
+}
+h1, h2, h3, p, ul, fieldset, button { 
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box; 
+}
+.container {
+  min-width: 320px;
+  padding: 0 220px;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width: 1180px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 767px) {
+      padding: 0 20px;
+}
+fieldset {
+border: 0;
+}
+}
+.heading {
+  font-weight: bold;
+  font-size: 47px;
+  line-height: 57px;
+  color: #070707;
+}
+.invalid-feedback {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: #EB3617;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+// Подключение компонентов
+@import "./header/header";
+@import "./footer/footer";
+@import "./pagination/pagination";
+@import "./menu-btn/menu-btn";
+@import "./blog-post/blog-post";
+@import "./register-modal/register-modal";
+@import "./sign-modal/sign-modal";
+@import "./message-modal/message-modal";
+@import "./slider/slider";
+.is-invalid {
+  border: 2.5px solid #EB3617;
+}

@@ -1,0 +1,56 @@
+.pagination {
+    &__bottom-panel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__dot {
+        width: 10px;
+        height: 10px;
+        border: none;
+        padding: 0;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: background-color .4s;
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        &_active {
+            background-color: #000;
+        }
+    }
+    &__dot:not(.pagination__dot_active):hover, &__dot:not(.pagination__dot_active):focus {
+        background-color: gray;
+    }
+    &__button {
+        width: 42px;
+        height: 42px;
+        background-color: transparent;
+        border: #070707 2px solid;
+        border: 2.5px solid #070707;
+        border-radius: 21px;
+        outline: none;
+        transition: all .5s;
+        & rect {
+            transition: all .5s;
+        }
+        @media (min-width: 375px) and (max-width: 462px) {
+                    background-position: center;
+                    background-size: contain;
+        }
+    }
+    &__button:not(:disabled):hover, &__button:not(:disabled):focus {
+        cursor: pointer;
+        border: 2.5px solid #828282;
+        & rect {
+            fill: #828282;
+        }
+    }
+    &__button:disabled {
+        opacity: .4;
+        pointer-events: none;
+        user-select: none;
+      }
+    
+}

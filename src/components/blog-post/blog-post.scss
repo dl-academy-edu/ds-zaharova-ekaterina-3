@@ -1,0 +1,120 @@
+.article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 2px solid #E5E5E5;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    color: #070707;
+    @media (max-width: 572px) {
+        flex-direction: column;
+    }
+    & a {
+        color: #070707;
+    }
+    &_border {
+        border-top: 2px solid #E5E5E5;
+    }
+    &__tag {
+        &_1 rect {
+            fill: #2176FF;
+        }
+        &_2 rect{
+            fill:  #33A1FD;
+        }
+        &_3 rect{
+            fill:  #FDCA40;
+        }
+        &_4 rect{
+            fill:  #57E2E5;
+        }
+        &_5 rect{
+            fill: #F79824;
+        }
+        &_6 rect{
+            fill:  #E08DAC;
+        }
+        &_7 rect{
+            fill:  #6A7FDB;
+        }
+        &_8 rect{
+            fill:  #45CB85;
+        }
+    }
+    &__img {
+        max-width: 320px;
+        min-width: 280px;
+        max-height: 236px;
+        min-height: 280px;
+        margin-right: 20px;
+        @media(max-width: 1230px) {
+            max-height: 320px;
+        }
+        @media (max-width: 572px) {
+            margin-right: 0; 
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__description-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 63%;
+        padding: 20px 0;
+        @media (max-width: 572px) {
+            width: 100%;
+        }
+    }
+    &__tag {
+        margin-right: 5px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: row;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_1 {
+            height: 10px;
+            margin-bottom: 10px;
+        }
+        &_2 {
+            margin-bottom: 15px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #828282;
+        }
+        &_3 {
+            flex-direction: column;
+        }
+    }
+    &__time {
+        margin-right: 10px;
+    }
+    &__amountViews {
+        margin-right: 10px;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__txt {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__link {
+        width: 123px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        border-bottom: 1px dashed #070707;
+    }
+}

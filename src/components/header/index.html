@@ -1,0 +1,52 @@
+<header class="header container">
+  <div class="header__wrapper">
+    <a href="@@linkindex.html" class="header__link">
+      <span class="header__link-text">Home</span>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="/pages/blog/index.html" class="header__nav-link">My blog</a>
+        </li>
+        <li class="header__nav-item">
+          <button type="button" class="header__nav-btn signBtnOpen">Sign in</button>
+        </li>
+        <li class="header__nav-item">
+          <button type="button" class="header__nav-btn registerBtnOpen">Register</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="header-mobile">
+  <div class="header-mobile__wrapper">
+    <button type="button" class="header-mobile__close-button">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707" />
+        <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)"
+          fill="#070707" />
+      </svg>
+    </button>
+    <a href="/index.html" class="header-mobile__link">
+      Home
+    </a>
+    <nav class="header-mobile__nav">
+      <ul class="header-mobile__nav-list">
+        <li class="header-mobile__nav-item">
+          <a href="/pages/blog/index.html" class="header-mobile__nav-link">My blog</a>
+        </li>
+        <li class="header-mobile__nav-item">
+          <button type="button" class="header-mobile__nav-btn signBtnOpen">Sign in</button>
+        </li>
+        <li class="header-mobile__nav-item">
+          <button type="button" class="header-mobile__nav-btn mobileRegisterBtnOpen">Register</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="header-overlay"></div>
+
+@@include('register-modal/index.html')
+@@include('sign-modal/index.html')
