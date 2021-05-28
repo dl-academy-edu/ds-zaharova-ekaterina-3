@@ -303,6 +303,7 @@
         left: 0;
         padding: 31px 0;
         background-color: rgba(7, 7, 7, 0.85);
+        z-index: 1;
     }
     &__link {
         font-weight: 500;
@@ -328,4 +329,10 @@
 .swiper-container {
     width: 100%;
     overflow: hidden;
+}
+.swiper-button-prev::after {
+    content: none;
+}
+.swiper-button-next::after {
+    content: none;
 }
